@@ -39,3 +39,5 @@ jobs:
           git branch -a
           git pull origin
           git branch -a
+          git push origin app:escrow
+          
