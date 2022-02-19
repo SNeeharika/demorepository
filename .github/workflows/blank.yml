@@ -36,16 +36,15 @@ jobs:
         run: |
           git config --global user.email "neeharika5samboji@gmail.com"
           git config --global user.name "SNeeharika"
-          git checkout master
-          ls
-          git branch -a
+          #git checkout master
+          #git branch -a
           git pull origin
           git fetch origin
           #git merge origin/master
           git checkout escrow
-          ls
+          #ls
           git checkout app
-          ls
-          git branch -a
+          #ls
+          #git branch -a
           git push origin app:escrow
           
