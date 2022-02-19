@@ -38,6 +38,7 @@ jobs:
           ls
           git branch -a
           git pull origin
+          git fetch origin
           git branch -a
-          git push origin app:escrow
+          #git push origin app:escrow
           
