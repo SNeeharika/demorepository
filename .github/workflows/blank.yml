@@ -39,6 +39,7 @@ jobs:
           git branch -a
           git pull origin
           git fetch origin
+          git merge origin/master
           git branch -a
           #git push origin app:escrow
           
