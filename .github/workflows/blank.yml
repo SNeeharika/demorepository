@@ -38,3 +38,4 @@ jobs:
           ls
           git branch -a
           git pull origin
+          git branch -a
