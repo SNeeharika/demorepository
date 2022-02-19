@@ -37,4 +37,4 @@ jobs:
           git checkout master
           ls
           git branch -a
-          git checkout app
+          git pull origin
