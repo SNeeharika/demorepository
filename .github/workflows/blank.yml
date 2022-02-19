@@ -41,10 +41,11 @@ jobs:
           git pull origin
           git fetch origin
           #git merge origin/master
-          git checkout escrow
-          #ls
           git checkout app
           #ls
+          git checkout escrow
+          ls
           #git branch -a
           git push origin app:escrow
+          ls
           
