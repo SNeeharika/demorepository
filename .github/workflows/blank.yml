@@ -44,7 +44,7 @@ jobs:
           git checkout app
           #ls
           git checkout escrow
-          ls
+          #ls
           #git branch -a
           git push origin app:escrow
           ls
