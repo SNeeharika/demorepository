@@ -54,4 +54,4 @@ jobs:
         sed 's/:/ :/g' deposit_information.json > tmp.$$.json && mv tmp.$$.json deposit_information.json      
         git add .
         git commit -m "version updated successfully"
-z        git push origin $TARGET_BRANCH  
+        git push origin $TARGET_BRANCH  
