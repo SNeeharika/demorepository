@@ -31,7 +31,9 @@ jobs:
 
         jq '.DepositVersion |= "'"$((ver+1))"'.0.0"' deposit_information.json > tmp.$$.json && mv tmp.$$.json deposit_information.json 
 
-        sed 's/:/ :/g' deposit_information.json > tmp.$$.json && mv tmp.$$.json deposit_information.json      
+        sed 's/:/ :/g' deposit_information.json > tmp.$$.json && mv tmp.$$.json deposit_information.json    
+        echo $ver
+        cat deposit_information.json
         git add .
         git commit -m "version updated successfully"
         git push origin $TARGET_BRANCH  
