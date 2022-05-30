@@ -16,26 +16,6 @@ jobs:
       with:
         fetch-depth: 0
         
-    - name: Synchronize master and escrow branches
-      run: |
-        name: Automatic sync of Master branch to the Escrow branch and update of json file with new version
-on:
-  push:
-    branches:
-      - master
-jobs:
-  Sync:
-    name: sync-of-master
-    runs-on: ubuntu-latest
-    env:
-        SOURCE_BRANCH: master
-        TARGET_BRANCH: escrow
-    
-    steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-        
     - name: Synchronize master and escrow_deposit branches
       run: |
         git config --global user.email "neeharika5samboji@gmail.com"
