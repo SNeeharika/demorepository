@@ -27,11 +27,11 @@ jobs:
       run: |       
         sudo apt-get install jq 
         version=$(cat deposit_information.json | jq .DepositVersion)
-        ver=${version:1:-5} 
+        # ver=${version:1:-5} 
 
-        jq '.DepositVersion |= "'"$((ver+1))"'.0.0"' deposit_information.json > tmp.$$.json && mv tmp.$$.json deposit_information.json 
+        jq '.DepositVersion |= "'"$((ver+1))"'"' deposit_information.json > tmp.$$.json && mv tmp.$$.json deposit_information.json 
 
-        sed 's/:/ :/g' deposit_information.json > tmp.$$.json && mv tmp.$$.json deposit_information.json      
+        # sed 's/:/ :/g' deposit_information.json > tmp.$$.json && mv tmp.$$.json deposit_information.json      
         git add .
         git commit -m "version updated successfully"
         git push origin $TARGET_BRANCH  
