@@ -21,7 +21,9 @@ jobs:
         git config --global user.email "neeharika5samboji@gmail.com"
         git config --global user.name "SNeeharika"
         git checkout $TARGET_BRANCH
+        git branch
         git merge $SOURCE_BRANCH
+        git branch
                
     - name: update
       run: |       
